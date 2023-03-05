@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Thomas Glaser",
+  "classifications": [ "Blazor" ],
+  "identity": "Dax Blazor Server Template",
+  "name": "Blazor Server template with Bootstrap",
+  "sourceName": "Dax.BlazorServer.Template",
+  "shortName": "daxblazorsrv",
+  "preferNameDirectory": true,
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  }
+}
+

@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dax.BlazorServer.Template", "src\Dax.BlazorServer.Template\Dax.BlazorServer.Template.csproj", "{045B598F-8771-4FD5-AC2F-1D49D1818EE5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F256D862-0867-417B-A61D-10FD1E29CF3E}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+		.gitignore = .gitignore
+		global.json = global.json
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E647F443-76A0-42DF-B21B-FC05B3157936}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{B756FE6C-892A-41DE-93D3-15CF6B1FD313}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dax.BlazorServer.Template.Tests", "tests\Dax.BlazorServer.Template.Tests\Dax.BlazorServer.Template.Tests.csproj", "{88F8973A-B0BA-46B4-BC0E-B71465513F69}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{045B598F-8771-4FD5-AC2F-1D49D1818EE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{045B598F-8771-4FD5-AC2F-1D49D1818EE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{045B598F-8771-4FD5-AC2F-1D49D1818EE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{045B598F-8771-4FD5-AC2F-1D49D1818EE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88F8973A-B0BA-46B4-BC0E-B71465513F69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88F8973A-B0BA-46B4-BC0E-B71465513F69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88F8973A-B0BA-46B4-BC0E-B71465513F69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88F8973A-B0BA-46B4-BC0E-B71465513F69}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{045B598F-8771-4FD5-AC2F-1D49D1818EE5} = {E647F443-76A0-42DF-B21B-FC05B3157936}
+		{88F8973A-B0BA-46B4-BC0E-B71465513F69} = {B756FE6C-892A-41DE-93D3-15CF6B1FD313}
+	EndGlobalSection
+EndGlobal

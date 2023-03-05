@@ -1,0 +1,50 @@
+﻿@page "/"
+@using BlazorServer.Template.Models
+@using BlazorBootstrap
+
+<PageTitle>Index</PageTitle>
+
+<div class="container">
+
+    <div class="py-5">
+        <h2>Titel</h2>
+    </div>
+
+    <EditForm Model="_registrationForm" OnValidSubmit="SubmitRegistration">
+        <DataAnnotationsValidator/>
+        <ValidationSummary/>
+
+        <div class="mb-3">
+            <label class="form-label" for="firstNameInput">Vorname</label>
+            <InputText class="form-control" id="firstNameInput" @bind-Value="@_registrationForm.FirstName"/>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="lastNameInput">Nachname</label>
+            <InputText class="form-control" id="lastNameInput" @bind-Value="@_registrationForm.LastName"/>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg">Registrieren</button>
+    </EditForm>
+
+    <Toasts class="p-3" Messages="messages" Placement="ToastsPlacement.TopRight" AutoHide="true" />
+
+</div>
+
+@code {
+
+    private RegistrationFormModel _registrationForm = new();
+    List<ToastMessage> messages = new List<ToastMessage>();
+
+    private void SubmitRegistration()
+    {
+        var toast = new ToastMessage
+        {
+            Type = ToastType.Success,
+            Title = "Registration successful",
+            HelpText = $"{DateTime.Now}",
+            Message = $"Your registration has been submitted."
+        };
+        messages.Add(toast);
+        _registrationForm.Clear();
+    }
+
+}
